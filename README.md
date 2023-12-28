@@ -1,1 +1,1 @@
-contribute to github.com/BlueCube-Games-Entertainment/, and the site will occasionally update
+contribute to github.com/BluePlay-Games/, and the site will occasionally update
