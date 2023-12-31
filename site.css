@@ -1,0 +1,47 @@
+html {
+    height: auto;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: WinSysUI;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: WinSysUIB;
+    font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+a:active {
+  color: #0000b5;
+  /*color: #0000c5;*/
+}
+
+footer {
+    position: absolute;
+    bottom: -10%;
+    left: 0px;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "WinSysUIB";
+    src:
+      url("font/segoeuib.ttf") format("truetype")
+}
+@font-face {
+    font-family: "WinSysUIBl";
+    src:
+      url("font/seguibl.ttf") format("truetype")
+}
+@font-face {
+    font-family: "WinSysUI";
+    src:
+      url("font/segoeui.ttf") format("truetype")
+}
