@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Soft redirect</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      button {
+        padding: 10px;
+        outline: none;
+        cursor: pointer;
+        background-color: green;
+        color: white;
+        border: 2px outset gray;
+      }
+      button:active {
+        border: 2px inset gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>npxl32 website</h1>
+    <p>Unfortunately, this website is not a GitHub Pages website, as GitHub Pages is for static websites.</p>
+    <p>Would you like to the real website?</p>
+    <button id="yes">Yes</button>
+    <script>
+    //  setTimeout(()=>{window.top.location.replace("https://www.npxl32.com/"), 1000});
+      document.querySelector("#yes").onclick = function() {
+        window.top.postMessage("so uhmm redirect you dumbass");
+      }
+      function onMessage(msg) {
+        if (msg.data == "so uhmm redirect you dumbass") {
+          alert("ok here my website");
+          location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        }
+      }
+      window.addEventListener("message", onMessage);
+    </script>
+  </body>
+</html>
